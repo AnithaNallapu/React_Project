@@ -21,8 +21,10 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
-      <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+    <div className="min-h-screen flex items-center justify-center bg-green-100 p-6">
+      <div className="bg-white rounded-1g shadow-lg p-6 w-full max-w-md">
+      <h1 className="text-3xl font-bold text-center text mb-4">To-Do List</h1>
+      <div className="bg-blue-200 rounded-lg shadow-lg p-6 w-full max-w-md">
         <h1 className="flex items-center justify-center text-2xl font-bold mb-4">Full Name</h1>
         <form onSubmit={addTodo} className="mb-4">
           <div className="mb-2">
@@ -45,7 +47,7 @@ const App = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+            className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300 font-bold" 
           >
             Add
           </button>
@@ -60,6 +62,7 @@ const App = () => {
             />
           ))}
         </ul>
+      </div>
       </div>
     </div>
   );
