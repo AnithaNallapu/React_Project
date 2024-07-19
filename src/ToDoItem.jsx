@@ -6,7 +6,7 @@ const ToDoItem = ({ index, todo, removeTodo }) => {
       <span>{todo.firstName} {todo.lastName}</span>
       <button
         onClick={() => removeTodo(index)}
-        className="bg-red-500 text-white px-2 py-1 rounded-lg hover:bg-red-600 transition duration-300"
+        className="bg-red-400 text-white px-2 py-1 rounded-lg hover:bg-red-600 transition duration-300"
       >
         Remove
       </button>
